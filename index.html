@@ -6,23 +6,42 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=11">
 	<link rel="stylesheet" href="https://cdn.staticfile.org/mdui/1.0.2/css/mdui.min.css" />
-	<!-- <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/5.2.3/css/bootstrap.min.css"> -->
 	<link rel="stylesheet" href="https://cdn.staticfile.org/bootstrap/5.2.3/css/bootstrap.min.css">
 	<link rel="shortcut icon" href="./images/ball.png" />
 	<link rel="stylesheet" href="css/style.css?s=2">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.loli.net/css2?family=Kanit&family=Noto+Sans+SC:wght@400;700&family=Oswald&family=Teko:wght@300&display=swap"
+		rel="stylesheet">
 	<title>罗淑华，你的眼睛在哪里？</title>
 	<!--<link rel="stylesheet" href="css/common.css">-->
 	<script src="https://cdn.staticfile.org/jquery/3.6.3/jquery.min.js"></script>
 	<script src="https://cdn.staticfile.org/showdown/2.1.0/showdown.min.js"></script>
-	<!-- <script src="https://cdn.staticfile.org/twitter-bootstrap/5.2.3/js/bootstrap.min.js"></script> -->
 	<script src="https://cdn.staticfile.org/bootstrap/5.2.3/js/bootstrap.min.js"></script>
 </head>
 
 <body style="margin-top: 5vh;">
 	<div class="container">
+		<div class="mdui-dialog" id="game2">
+			<div class="mdui-dialog-title">《淑华打子勤》适龄提示</div>
+			<div class="mdui-dialog-content">
+				<ol class="shiLinTiShi">
+					<li>本游戏是一款运借街机类型的休闲游戏，适用于年满8周岁及以上的用户，建议未成年人在家长监护下使用游戏产品。</li>
+					<li>游戏中没有基于文字和语音的陌生人社交系统。</li>
+					<li>本游戏中没有用户实名认证系统，认证为未成年人的用户<b>不接受</b>以下管理：<br>•&nbsp;游戏中<b>无收费内容</b>。未成年用户<b>全天候</b>可以体验游戏。
+					</li>
+					<li>本游戏有助于锻炼玩家的观察力、反应力和专注力，能够使玩家熟悉物理反弹规律。规则简单，有不同难度可供选择。</li>
+				</ol>
+			</div>
+			<div class="mdui-dialog-actions">
+				<button class="mdui-btn mdui-ripple" mdui-dialog-close>关闭</button>
+			</div>
+		</div>
+
 		<div class="row">
 			<div class="col-sm-12">
-				<h2>淑华一家爆掉了</h2>
+				<h2 class="mainTitle">淑华一家爆掉了</h2>
 				<hr>
 				<center>
 					<p>
@@ -47,11 +66,22 @@
 					<p><canvas id="canvas" style="width: 100%;height: 563px;"></canvas></p>
 				</center>
 				<hr>
-				<h3>操作说明</h3>
-				<p>使用方向键控张丽萍左右移动，使用回车让张丽萍发球，按 P 暂停游戏，通关后按 N 进入下一关</p>
+				<h3 class="sub-title">操作说明</h3>
+				<p>移动端<b>长按屏幕左右</b>控制张丽萍移动。</p>
+				<p>PC使用<b>方向键</b>控制张丽萍左右移动，使用<b>回车</b>让张丽萍发球，按<b>P</b>暂停游戏，通关后按<b>N</b>进入下一关</p>
 				<p>特殊技能：W 发起钟馗鬼步，5 秒内能 100% 接住球，每次消耗 1000 积分。</p>
-				<p>移动端可以长按屏幕左右控制张丽萍移动。</p>
 				<hr>
+				<div style="margin-top: -10px;">
+					<a class="mdui-ripple CADPA-a" mdui-dialog="{target: '#game2'}">
+						<img src="https://font.junjiantech.top/CADPA/8+.svg" class="CADPA" alt="CADPA level 8+"></a>
+					<img src="https://font.junjiantech.top/CADPA/ESRB/ESRB_2013_Everyone_10+.svg" class="CADPA"
+						alt="ESRB level everyone">
+					<img src="https://font.junjiantech.top/CADPA/IARC/IARC_7+.svg" class="CADPA" alt="IARC level 3+">
+					<p style="font-size: 16px; line-height: 20px; padding-top: 10px;">
+						本游戏拒绝履行《网络游戏行业防沉迷自律公约》<br>健康游戏忠告：抵制不良游戏，拒绝盗版游戏
+						注意自我保护，谨防上当受骗 适度游戏益脑，沉迷游戏伤身 合理安排时间，享受健康生活</p>
+				</div>
+
 				<hr>
 				<p>Github 开源项目：<a href="https://github.com/Duck-Deng/ZhangBall"
 						target="_blank">https://github.com/Duck-Deng/ZhangBall</a></p>
