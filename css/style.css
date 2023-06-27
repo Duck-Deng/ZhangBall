@@ -55,6 +55,7 @@ b {
 p {
 	font-weight: 400;
 	font-family: 'Noto Sans SC';
+	margin-bottom: 0;
 }
 
 .difficulty {
