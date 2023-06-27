@@ -49,9 +49,26 @@ canvas {
 b {
 	font-weight: 800;
 	font-family: 'Noto Sans SC';
+	font-size: 1.15em;
 }
 
 p {
 	font-weight: 400;
 	font-family: 'Noto Sans SC';
+}
+
+.difficulty {
+	text-align: center;
+	line-height: 38px;
+	padding-right: 5px;
+	font: 800 20px 'Noto Sans SC'
+}
+
+.input-group-btn > .btn{
+	padding-right: 5px;
+}
+
+.botton-group{
+	display: block;
+	padding-top: 5px;
 }
